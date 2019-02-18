@@ -1,0 +1,47 @@
+/* pages/index/index.wxss */
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.ipt {
+  width: 90%;
+  height: 80rpx;
+  background: #eee;
+  border-radius: 40rpx;
+  padding: 0 40rpx;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-bottom: 30rpx;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1rpx #eee;
+  border-bottom: solid 1rpx #eee;
+  width: 150%;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 20rpx;
+}
+
+.nav view {
+  margin-right: 50rpx;
+}
+.nav .active{
+  font-weight: bold;
+}
+.item{
+  display: flex;
+  justify-content: space-between;
+  padding:20rpx;
+  border-bottom: solid 1rpx #eee;
+}
+.item image{
+  width:300rpx;
+  height:300rpx;
+  margin-right: 30rpx;
+}

@@ -1,0 +1,29 @@
+<!--pages/login/login.wxml-->
+<view class="wrapper">
+  <image src="../../images/1.jpg"></image>
+  <view>
+    <button open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">微信登录</button>
+    <button>已有账号,手机号登录</button>
+  </view>
+  <view class="dialog" wx:if="{{flag}}">
+    <view class="mask">
+      <view class="tit">
+        <image src="../../images/2.jpg"></image>
+        <view style="margin:0 30rpx;">小红书</view>
+        <view style="font-size:35rpx;">申请</view>
+      </view>
+      <view style="font-weight:bold;font-size:55rpx;padding:0 20rpx;">获取你的昵称、头像、地区、及性别</view>
+      <view class="info">
+        <image src="{{imgUrl}}"></image>
+        <view>
+          <view>微信个人信息</view>
+          <view style="font-size:32rpx;color:#999">{{nickName}}</view>
+        </view>
+      </view>
+      <view class="btn">
+        <view bindtap='cancel'>取消</view>
+        <view style="background:#07C15F;color:#fff" bindtap='allow'>允许</view>
+      </view>
+    </view>
+  </view>
+</view>

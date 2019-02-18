@@ -1,0 +1,64 @@
+/* pages/login/login.wxss */
+
+button:nth-child(1) {
+  width: 90%;
+  border-radius: 50rpx;
+  background: red;
+  margin-bottom: 50rpx;
+  color: #fff;
+}
+
+button:nth-child(2) {
+  width: 90%;
+  border-radius: 50rpx;
+}
+.dialog{
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, .6);
+  position: absolute;
+  top:0;
+  left:0;
+}
+.mask{
+  width:100%;
+  height:650rpx;
+  position: absolute;
+  left:0;
+  bottom:0;
+  background: #fff;
+}
+.mask .tit{
+  display: flex;
+  align-items: center;
+  padding:20rpx;
+}
+.mask .tit image{
+  width:70rpx;
+  height:70rpx;
+  border-radius: 50%;
+}
+.info{
+  display: flex;
+  border-top:solid 1rpx #eee;
+  border-bottom:solid 1rpx #eee;
+  padding:20rpx;
+  margin-top:30rpx;
+}
+.info image{
+  width:100rpx;
+  height:100rpx;
+  margin-right:30rpx;
+}
+.btn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80rpx;
+}
+.btn view{
+  padding:20rpx 100rpx;
+  background: #eee;
+  border-radius: 10rpx;
+
+}

@@ -1,0 +1,11 @@
+/* pages/search/search.wxss */
+.ipt {
+  width: 90%;
+  height: 80rpx;
+  background: #eee;
+  border-radius: 40rpx;
+  padding: 0 40rpx;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-bottom: 30rpx;
+}

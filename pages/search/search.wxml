@@ -1,0 +1,4 @@
+<!--pages/search/search.wxml-->
+<view class="wrapper">
+  <input placeholder="大家都在搜索" auto-focus class="ipt" class="ipt"/>
+</view>

@@ -1,0 +1,22 @@
+<!--pages/index/index.wxml-->
+<view class="wrapper">
+  <view><input placeholder="大家都在搜索" auto-focus class="ipt" bindtap='handleSearch'/></view>
+  <scroll-view scroll-x style="width:100%">
+  <view class="nav">
+    <view class="{{idx==='0'?'active':''}}" data-idx="0" bindtap='handleClick'>推荐</view>
+    <view class="{{idx==='1'?'active':''}}" data-idx="1" bindtap='handleClick'>附近</view>
+    <view class="{{idx==='2'?'active':''}}" data-idx="2" bindtap='handleClick'>视频</view>
+    <view class="{{idx==='3'?'active':''}}" data-idx="3" bindtap='handleClick'>旅行</view>
+    <view class="{{idx==='4'?'active':''}}" data-idx="4" bindtap='handleClick'>男士穿搭</view>
+    <view class="{{idx==='5'?'active':''}}" data-idx="5" bindtap='handleClick'>健身</view>
+    <view class="{{idx==='6'?'active':''}}" data-idx="6" bindtap='handleClick'>影音</view>
+    <view class="{{idx==='7'?'active':''}}" data-idx="7" bindtap='handleClick'>娱乐</view>
+  </view>
+  <view class="list">
+    <view class="item" wx:for="{{list}}" wx:key="{{index}}">
+      <image src="{{item.imgUrl}}"></image>
+      <view>{{item.nm}}</view>
+    </view>
+  </view>
+  </scroll-view>
+</view>
